@@ -1,0 +1,692 @@
+
+body{
+	background:#FFF;
+	margin:0;
+	font-family:'Lato',sans-serif;
+}
+
+
+/**menu y header **/
+
+#headerMenu{
+	width:100%;
+	background-color:#000000;
+}
+
+#divTextM{
+	padding-top:5px;
+	padding-left:25px;
+	width:30%;
+	float:left;	
+	color:#47AD15;
+	font-size:25px;
+}
+
+#divButtonM{
+	float:right;
+	cursor: pointer;
+}
+
+
+#headerMenuMovil{
+	display:none;
+	width:100%;
+	background-color:#000000;
+}
+
+#tableMenu{
+	display:none;
+}
+
+#HeaderLogo{
+	height:70px;
+	text-align:center;
+	background-color:#FFFFFF;
+}
+
+#Hmenu{
+	background-color:#000000;
+	height:70px;
+	color:#FFFFFF;
+}
+
+#headerLeft{
+	background-color:#FFFFFF;
+	height:70px;
+	width:20%;
+	position:absolute;
+}
+
+/**********/
+
+.tableParent{
+	display: table;
+	width: 104%;
+	height: 50px;
+	padding: 0;
+	table-layout: fixed;
+	font-size:12px;
+	float:left;
+	margin-left:-2%;
+}
+
+.tableChild{
+	display: table-cell;
+	width: 1%;
+	height: 70px;
+	color: #FFF;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.tableParent  .active{
+	border-bottom: 4px solid #47AD15;
+}
+
+.tableChild:hover{
+	color: #47AD15;
+}
+
+/*********/
+
+#logoGo{
+    cursor: pointer;
+	height: 70px;
+	display: inline-block;
+}
+
+.header-content{
+	position:relative;
+	float:left;
+	width:100%;
+	background:#FFF url('../../img/web/header-bg.jpg') repeat-x;
+	height:500px;
+}
+
+#homeStore{
+	background: url('../../img/web/FondoStore3.png');
+	background-size:100% 100%;
+	height:600px;
+}
+
+#header-image-cellphone{
+	margin-top:7%;
+	margin-left:16%;
+}
+
+#imgGooglePlayLogo{
+	margin-top:43%;
+	margin-left:20%;
+}
+
+#imgAppStoreLogo{
+	margin-top:43%;
+	margin-left:10%;
+}
+
+#imgPhoneSmall1{
+	margin-top:17%;
+	/*margin-left:50%;	*/
+	margin-left:80px;
+}
+
+#imgPhoneSmall2{
+	margin-top:17%;
+	/*margin-left:30%;	*/
+	margin-left:55px;
+}
+
+#imgPhoneSmall3{
+	margin-top:17%;
+	/*margin-left:10%;	*/
+	margin-left:30px;
+}
+
+#imgPhoneSmall4{
+	margin-top:17%;
+	/*margin-left:-10%;	*/
+	margin-left:5px;
+}
+
+@media only screen and (max-width: 40em) { 
+
+	.tableChild{
+		display:none;	
+	}
+	
+	.header-content{
+		height:300px;
+	}
+	
+	#Hmenu{
+		height:50px;
+		padding-left:0;
+	}
+	
+	#tableMenu{
+		display:inline;
+	}
+	
+	#menuMovil{
+		margin-top:10px;
+		margin-right:10px;
+		height:30px;
+		width:30px;	
+	}
+	
+	#imgGooglePlayLogo{
+		margin-top:60%;
+	}
+
+	#imgAppStoreLogo{
+		margin-top:60%;
+		margin-left:2%;
+	}
+	
+	#imgPhoneSmall1{
+		margin-top:70%;
+		margin-left:40px;
+	}
+
+	#imgPhoneSmall2{
+		margin-top:70%;
+		margin-left:20px;
+	}
+
+	#imgPhoneSmall3{
+		margin-top:70%;
+		margin-left:3px;
+	}
+
+	#imgPhoneSmall4{
+		margin-top:70%;
+		margin-left:-15px;
+	}
+	
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+	.header-content{
+	}
+	
+	#imgGooglePlayLogo{
+		margin-left:16%;
+	}
+
+	#imgAppStoreLogo{
+		margin-left:5%;
+	}
+}
+
+/**********************************************/
+/************session woman ********************/
+
+#content-Woman{
+	
+}
+
+#imgWoman{
+	margin-top:-189%;
+	margin-left:50px;
+}
+
+#seccion1-izquierda-superior{
+    float: right;
+ 	text-align: justify;
+  	padding-right: 20px;
+	margin-top:328px;
+}
+
+#seccion1-izquierda-inferior{
+    background: #000000;
+    color: #FFFFFF;
+    float: left;
+    text-align: justify;
+    padding-right: 20px;
+	padding-top: 20px;
+    border-left: solid 3px #8ccb45 ;
+	padding-bottom:30px;
+}
+
+.h1-intro{
+    font-family:'Helvetica';
+    font-size: 30px;
+    font-weight: bold;
+	margin-top:30px;
+}
+
+.introWhite{
+	margin-top:0px;
+	color:#FFF;	
+}
+
+.intro{	
+	line-height:1.2em;
+	/*margin-top:40px;*/
+}
+
+#subtitulo-encontraras{
+    padding-left:5px;
+}
+
+@media only screen and (max-width: 40em) { 
+
+	#seccion1-izquierda-superior{
+		margin-top:10px;	
+	}
+
+	#imgWoman{
+		margin-top:0;
+		margin-left:0;
+	}
+	
+	.h1-intro{
+		text-align:center;	
+	}
+	
+	.introWhite{
+		text-align:justify;	
+	}
+	
+	#textUlWoman{
+		text-align:left;
+	}
+	
+	#seccion1-izquierda-inferior{
+    	border-left: 0;
+	}
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+	
+	#seccion1-izquierda-superior{
+		margin-top:0;
+	}
+	
+	#imgWoman{
+		margin-top:0;
+		margin-left:50px;
+	}
+	
+	#divWoman{
+		text-align:center;	
+	}
+
+}
+
+/**********************************************/
+/************session como funciona ********************/
+
+#txtComoFunciona{
+	text-align:center;
+	font-size: 64px;
+  	font-weight: bold;
+  	color: #686868;
+  	padding-top: 30px;	
+}
+
+#seccion-comofunciona-pasos{
+    background: #656565;
+	text-align:center;
+}
+
+.paso-txt{
+    font-weight: 300;
+    font-size: 14px;
+    height: 75px;
+}
+
+.paso-num{
+    height: 95px;
+    font-weight: 400;
+    font-size: 60px;
+}
+
+/*verificar*/
+
+.comofunciona-paso{
+    width: 220px;
+    height: 350px;
+/*    background: #ececec;*/
+    display: inline-block;
+    color: #FFFFFF;
+    font-weight: 300;
+}
+
+/*******shake it session **********/
+
+#imgShakeit{
+	text-align:center;
+	background:#FFF;	
+}
+
+#HeaderShakeit{
+	height:100px;	
+}
+
+@media only screen and (max-width: 40em) {
+	#HeaderShakeit{
+		height:25px;	
+	}	
+	
+	#txtComoFunciona{
+	font-size: 50px;
+  	padding-top: 30px;	
+	}
+}
+
+/**************afiliados session *******************/
+
+#HeaderAfiliados{
+    background: #ebebeb ;
+    color: #686868;
+    padding-top:20px;
+	text-align:center;
+}
+
+#seccion-afiliados-titulo{
+    font-size: 78px;
+    color: #000000;
+    font-weight: 900;
+}
+
+#seccion-afiliados-txt{
+    font-size: 18px;
+    font-weight: lighter;
+	padding-bottom:40px;
+}
+
+#seccion-afiliados-logos{
+    background: #656565;
+	float:right;
+	width:100%;
+}
+
+.afiliado-logo{
+	padding-top:111px;
+	padding-bottom:111px;	
+}
+
+#seccion-afiliados-logos .active{
+	background:#202020;	
+}
+
+@media only screen and (max-width: 40em) {
+	.afiliado-logo{
+		padding-top:50px;
+		padding-bottom:50px;	
+	}	
+	
+	#seccion-afiliados-titulo{
+    	font-size: 50px;
+    	color: #000000;
+	}
+}
+
+/*************descargas session ************************/
+
+#HeaderDescargar{
+    background: #ebebeb;
+    font-family:'Helvetica';
+    font-weight: lighter;	
+	text-align:center;
+}
+
+#txt-descarga{
+	font-size: 64px;
+	font-weight: bold;
+	color: #686868;
+	padding-top:20px;	
+}
+
+.txt-descarga-content{
+    font-weight: lighter;
+    font-size: 20px;
+	margin-top:-20px;
+	margin-bottom:30px;
+}
+
+#seccion-descarga-android{
+    background:#FFF;
+}
+
+#seccion-descarga-ios{
+    background:#000;
+}
+
+
+#descarga-android{
+	text-align:center;
+	border-left:3px solid #47AD15;
+	float:right;
+}
+
+#descarga-ios{
+	text-align:center;
+	border-right:3px solid #47AD15;
+}
+
+.img-descarga{
+	padding-top:50px;
+	padding-bottom:50px;
+}
+
+@media only screen and (max-width: 40em) {
+	#descarga-android{
+		border-left:0;
+	}
+
+	#descarga-ios{
+		border-right:0;
+	}	
+	
+	#txt-descarga{
+		font-size:45px;	
+	}
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+	
+	#descarga-android{
+		border-left:0;
+	}
+
+	#descarga-ios{
+		border-right:0;
+	}
+	
+}
+
+/***********mapa******************/
+
+#map-canvas{
+	height:600px;
+	width:100%;
+	float:left;	
+}
+
+@media only screen and (max-width: 40em) {
+	#map-canvas{
+		height:400px;
+	}	
+}
+
+/*************** contact ***********************/
+
+#seccion-contact{
+	float:left;
+	background:#000;
+}
+
+#contact-Left{
+	background:#FFF;
+	padding-right:0;
+}
+
+#contact-Right{
+	background:#000;
+}
+
+#contact-Img{
+	background:#FF0;
+	float:left;
+}
+
+#contact-date{
+	float:right;	
+	border-left: solid 3px #8ccb45 ;
+	padding-left:30px;
+	padding-top:9px;
+}
+
+#contact-Form{
+	border-right: solid 3px #8ccb45 ;
+	float:left;
+}
+
+#div-datos-contacto-texto{
+    display: inline-block;
+    text-align: left;
+    padding-bottom: 55px;
+    font-weight: 300;
+}
+
+#datos-contacto-titulo{
+    font-size: 30px;
+    font-weight: 900;
+	margin-top:30px;
+	margin-bottom:18px;
+}
+
+@media only screen and (max-width: 40em) {
+
+	#contact-Right{
+		padding-right:0;
+	}
+	
+	#contact-date{	
+		border-left: 0 ;
+	}
+
+	#contact-Form{
+		border-right: 0 ;
+	}
+	
+	#datos-contacto-titulo{
+		padding-left:100px;
+	}
+	
+	#contact-Left{
+		padding-left:0;	
+	}
+	
+	.img-contact{
+		/*margin-left:10%;*/
+	}
+	
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+	
+	#contact-Left{
+		padding-left:0;	
+	}
+
+	#contact-date{	
+		border-left: 0 ;
+	}
+
+	#contact-Form{
+		border-right: 0 ;
+	}
+	
+	#div-datos-contacto-texto{
+		margin-left:20px;	
+	}
+}
+
+/****input ******/
+
+#h2-WriteUs{
+	color:#FFF;	
+}
+
+.row #formContact .txtContact{
+	background:none;
+	color:#FFF;	
+	border:none;
+	border-bottom: solid 1px #FFFFFF ;	
+}
+
+#txtMensaje::-webkit-scrollbar {
+    width: 7px;
+}
+ 
+#txtMensaje::-webkit-scrollbar-track { 
+    border-radius: 5px;
+}
+ 
+#txtMensaje::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+	background:#FFF;
+}
+
+#btnEnviar{
+	width:50%;
+	background:none;
+	border: solid 1px #FFFFFF ;
+}
+
+/*********footer************/
+
+#footer{
+	text-align:center;
+	width:100%;
+	float:left;
+}
+
+
+/**********************************************/
+/*************menu desplegable*******************/
+/**********************************************/
+
+#HmenuMovil{
+	width:80%;
+	height:100%;
+	z-index:3;
+	display:none;
+}
+
+#menuAll{
+	width:100%;
+	height:100%;
+	background:rgba(51, 153, 153, 0);
+	position:fixed;
+	z-index:2;
+	display:none;
+}
+
+#HmenuMovil ul{
+	margin-left:-15px;
+	list-style:none;
+}
+
+#HmenuMovil ul li{
+	background:#000;
+	border-bottom:1px solid #47AD15;
+	padding-top:10px;
+	padding-left:20px;
+	width:105%;
+	height:50px;
+	cursor:pointer;
+}
+
+#HmenuMovil ul li:hover{
+	background:#333;
+	color:#47AD15;
+}
+
+#first{
+	border-top:1px solid #47AD15;
+}
