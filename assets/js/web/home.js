@@ -123,11 +123,12 @@ function sendForm(){
 				menssaje:$("#txtMensaje").val()
 			},
 			success: function(data){
-				console.log(data)
+				cleanFields();
 				alert("mensaje enviado")
 			
 			},
-			error: function(data){	
+			error: function(data){
+				cleanFields();	
 				alert("error")
 			}
 		});
@@ -168,13 +169,6 @@ function validation(){
         result = false;
 	}
 	
-	if($("#txtPhone").val().trim().length == 0){
-		$("#alertPhone").show();
-		$("#lblPhone").addClass('error');
-		$('#txtPhone').focus();
-		result = false;
-	}
-	
 	if($("#txtName").val().trim().length == 0){
 		$("#alertName").show();
 		$("#lblName").addClass('error');
@@ -182,11 +176,13 @@ function validation(){
 		result = false;
 	}
 	
-	if($("#txtCompania").val().trim().length == 0){
-		$("#alertCompania").show();
-		$("#alertCompania").addClass('error');
-		$('#txtCompania').focus();
-		result = false;
+	if(!result){
+		$("#contact-Right").css("height","auto");
+		var RightTotal = $("#contact-Right").css("height");
+		$("#contact-Left").css("height",RightTotal);	
+	}else{
+		$("#contact-Right").css("height","500px");
+		$("#contact-Left").css("height","500px");
 	}
 	
 	return result;

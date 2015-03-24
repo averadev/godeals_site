@@ -17,8 +17,9 @@ class EmailManager {
                 <div style="width:100%; height:5px; background: #5ec62b;"></div>
 
                 <div style="width:100%; margin: 20px 0;">
-                    <h3>'.$conpania.'</h3>
-					<h3>'.$phone.'</h3>
+                    <h3>'.$name.'</h3>
+					<h4>'.$phone.'</h4>
+					<h4>'.$conpania.'</h4>
 
                     <p style="font-family:Georgia; font-size:18px;">'.$messaje.'</p>
 
