@@ -522,18 +522,26 @@ body{
 #contact-Left{
 	background:#FFF;
 	padding-right:0;
+	height:500px;
 }
 
 #contact-Right{
 	background:#000;
+	height:500px;
 }
 
 #contact-Img{
-	background:#FF0;
-	float:left;
+	height:46%;
+	border-left: solid 3px #8ccb45 ;
+}
+
+.img-contact{
+	bottom:50px;
+	height:100%;
 }
 
 #contact-date{
+	height:53.5%;
 	float:right;	
 	border-left: solid 3px #8ccb45 ;
 	padding-left:30px;
@@ -541,14 +549,15 @@ body{
 }
 
 #contact-Form{
-	border-right: solid 3px #8ccb45 ;
+	border-right: solid 3px #8ccb45;
 	float:left;
+	height:100%;
 }
 
 #div-datos-contacto-texto{
     display: inline-block;
     text-align: left;
-    padding-bottom: 55px;
+    padding-bottom: 60px;
     font-weight: 300;
 }
 
@@ -563,6 +572,7 @@ body{
 
 	#contact-Right{
 		padding-right:0;
+		height:auto;
 	}
 	
 	#contact-date{	
@@ -571,6 +581,7 @@ body{
 
 	#contact-Form{
 		border-right: 0 ;
+		padding-bottom:0;
 	}
 	
 	#datos-contacto-titulo{
@@ -579,18 +590,29 @@ body{
 	
 	#contact-Left{
 		padding-left:0;	
+		height:auto;
 	}
 	
 	.img-contact{
-		/*margin-left:10%;*/
+		height:auto;
+		width:auto;
+	}
+	
+	#contact-Img{
+		border-left: 0 ;
 	}
 	
 }
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+
+	#contact-Right{
+		height:auto;
+	}
 	
 	#contact-Left{
-		padding-left:0;	
+		padding-left:0;
+		height:auto;	
 	}
 
 	#contact-date{	
@@ -599,10 +621,20 @@ body{
 
 	#contact-Form{
 		border-right: 0 ;
+		padding-bottom:0;
 	}
 	
 	#div-datos-contacto-texto{
 		margin-left:20px;	
+	}
+	
+	.img-contact{
+		height:auto;
+		width:auto;
+	}
+	
+	#contact-Img{
+		border-left: 0 ;
 	}
 }
 
@@ -689,4 +721,25 @@ body{
 
 #first{
 	border-top:1px solid #47AD15;
+}
+
+/***********boton arriba**************/
+
+#btnUp{
+	display:none;
+	position:fixed;
+	height:50px;
+	width:50px;
+	background:#47AD15;
+	bottom:1%;
+	right:.5%;
+	z-index:1;
+	cursor:pointer;
+}
+
+@media only screen and (max-width: 40em) {
+	#btnUp{
+		height:30px;
+		width:30px;
+	}
 }

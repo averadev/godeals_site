@@ -24,6 +24,9 @@ $(document).on('click','#affiliates',function() { downScroll(4); });
 $(document).on('click','#downloads',function() { downScroll(5); });
 $(document).on('click','#contact',function() { downScroll(6); });
 
+//llama a la funcion de subir el scroll
+$(document).on('click','#btnUp',function() { upScroll(); });
+
 //muestra el menu desplegable
 function showMenu(){
 	if(contMenu == 0){
@@ -46,6 +49,14 @@ function hideMenu(){
 	contMenu = 0;
 }
 
+//muestra el boton para regresar al menu
+$(window).scroll(function(){
+		if( $(this).scrollTop() > 0 ){
+			$('#btnUp').slideDown(300);
+		} else {
+			$('#btnUp').slideUp(300);
+		}
+	});
 
 //
 function downScroll(number){
@@ -84,7 +95,14 @@ function downScroll(number){
 	
 	$('body, html').animate({
 		scrollTop: offset.top
-	}, 300);
+	}, 1000);
+}
+
+//sube el scroll
+function upScroll(){
+	$('body, html').animate({
+		scrollTop: 0
+	}, 1000);
 }
 
 //envia los datos al correo
