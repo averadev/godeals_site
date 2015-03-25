@@ -41,7 +41,7 @@ class EmailManager {
 
         // Enviarlo
 		//mail('conomia_alfredo@hotmail.com', $título, $mensaje, $cabeceras);
-        if(mail('conomia_alfredo@hotmail.com', $título, $mensaje, $cabeceras)){	
+        if(mail('mzuniga@geekbucket.com.mx', $título, $mensaje, $cabeceras)){	
 			return true;
 		}else {
 			return false;
